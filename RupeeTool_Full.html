@@ -1,0 +1,456 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .topnav{
+        width: 100%;
+        height: 100px;
+        top: 40px;
+    }
+    .topnav a {
+        font-family: 'Montserrat', sans-serif;
+        float: right;
+        margin-top: 30px;
+        margin-right: 50px;
+        color:white;
+        font-size: 22px;
+        padding:20px;
+    }
+    .topnav a.active{
+        background-color: #5D6EBF;
+        border-style: solid;
+        border-color: white;
+        border-radius: 8px;
+        border-width: 1px;
+        padding: 20px 40px;
+        transition: background-color 0.1s linear;
+    }
+    a.active:hover{
+        background-color: white;
+        color: #5D6EBF;
+    }
+    .rupee{
+        margin-top: 32px;
+        margin-left: 100px;
+    }
+    #blue-box{
+        background-image: linear-gradient(60deg, #5CB5C0, #5D6EBF);
+        width: 100%;
+        height: 969px;
+    }
+    .powwow{
+        height: 869px;
+        display: flex;
+    }
+    .pic-head{
+        width: 50%;
+        height: 869px;
+    }
+    .head-pic{
+        width: 50%;
+        height: 869px;
+    }
+    .vector{
+        margin-top: 150px;
+        margin-left: 40px;
+    }
+    .head{
+        font-size: 90px;
+        font-family: Montserrat;
+        margin-top: 230px;
+        color: white;
+        z-index: 2;
+        margin-top: -430px;
+    }
+    .pattern{
+        float: right;
+    }
+    .contact{
+        color: white;
+        background-color: #30489a;
+        float:left;
+        font-size: 20px;
+        font-family: Montserrat;
+        font-weight: 400;
+        margin-top: 20px;
+        margin-left: 10px;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 8px;
+        border-color: rgba(0, 0, 0, 0);
+        padding: 15px 40px;
+        text-decoration: none;
+        z-index: 2;
+    }
+    .services{
+        margin-top: 100px;
+        width: 100%;
+        height: 100px;
+    }
+    .container{
+        width: 100%;
+        height: 769px;
+        display: flex;
+        justify-content:space-evenly;
+    }
+    .container2{
+        width: 100%;
+        height: 569px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .container3{
+        width: 100%;
+        height: 300px;
+        display: flex;
+    }
+    .card1{
+        background-color: white;
+        margin-left: 300px;
+        border-radius: 16px;
+        width: 30%;
+        height: 519px;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        transition: background-color 0.1s linear;
+    }
+    .card1:hover{
+        background-color: #F5F6FF;
+    }
+    .card2{
+        background-color: white;
+        margin-right: 300px;
+        border-radius: 16px;
+        width: 30%;
+        height: 519px;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        transition: background-color 0.1s linear;
+    }
+    .card2:hover{
+        background-color: #FFEAE5;
+    }
+    .card3{
+        background-color: white;
+        margin-left: 300px;
+        border-radius: 16px;
+        width: 30%;
+        height: 519px;
+        margin-bottom: 150px;
+        transition: background-color 0.1s linear;
+    }
+    .card3:hover{
+        background-color: #FFEACA;
+    }
+    .card4{
+        background-color: white;
+        margin-right: 300px;
+        border-radius: 16px;
+        width: 30%;
+        height: 519px;
+        margin-bottom: 150px;
+        transition: background-color 0.1s linear;
+    }
+    .card4:hover{
+        background-color: #FDF1C8;
+    }
+    .card-logo{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    #estIcon{
+        position: absolute;
+        margin-top: 5px;
+        margin-left: 5px;
+        font-size: 30px;
+        color: #61636B;
+    }
+    .associations{
+        width: 100%;
+        height: 130px;
+    }
+    .dlf{
+        width: 50%;
+        height: 150px;
+        text-align: center;
+    }
+    .omaxe{
+        width: 50%;
+        height: 150px;
+    }
+    .purple-box{
+        background-image: url(https://cdn.discordapp.com/attachments/548484359557087234/890092152091197450/purple_bg.png);
+        background-size:cover;
+        width: 100%;
+        height: 600px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .slider{
+        width: 40%;
+        margin-top: 180px;
+        height: 290px;
+        margin-bottom: 130px;
+    }
+    .slider button{
+        background-color:rgb(159,126,226);
+        border-width: 0px;
+        border-radius: 8px;
+        padding: 8px 34px;
+        margin-top: 30px;
+        margin-left: 20px;
+        color: white;
+        cursor: pointer;
+    }
+    .review{
+        background-color:rgba(144,105,221,0.5);
+        box-shadow: 1px 1px 12px 0 rgba(0,0,0,0.2);
+        width: 40%;
+        margin-top: 200px;
+        height: 270px;
+        margin-bottom: 130px;
+        border-radius: 12px;
+        backdrop-filter: blur(5px);
+    }
+    .getinTouch{
+        background-color: white;
+        border-style: solid;
+        border-radius: 40px;
+        border-width: 2px;
+        border-color: rgba(184, 182, 182, 0.801);
+        width: 70%;
+        height: 1100px;
+        margin-top: 300px;
+        margin-left: 300px;
+        display: flex;
+        justify-content: center;
+    }
+    .section-1{
+        width: 50%;
+        height: 1100px;
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 40px;
+    }
+    .section-2{
+        width: 50%;
+        height: 1100px;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+    .fill-out{
+        border-style: solid;
+        text-decoration: none;
+        border-width: 2px;
+        border-radius: 5px;
+        border-color: rgb(239,240,254);
+        padding-left: 5px;
+        padding-right: 200px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: left;
+        margin-left: 50px;
+        font-size: 20px;
+        font-weight: 300;
+        font-family: Poppins;
+    }
+    .fill-out:focus::placeholder{
+        color: transparent;
+    }
+    .info-container{
+        margin-top: 180px;
+        background-color: rgb(34,39,64);
+        width: 100%;
+        height: 350px;
+        display: flex;
+    }
+    .links{
+        display:inline-block;
+        text-decoration: none;
+        margin-top: 20px;
+        margin-left: 40px;
+        font-family: Poppins;
+        color:white;
+        font-weight: 300;
+    }
+    .info1{
+        width: 25%;
+        height: 350px;
+    }
+    .info2{
+        width: 25%;
+        height: 350px;
+    }
+    .info3{
+        width: 15%;
+        height: 350px;
+    }
+    .info4{
+        width: 15%;
+        height: 350px;
+    }
+    .info5{
+        width: 20%;
+        height: 350px;
+    }
+    .rights-reserved{
+        margin-top: 2px;
+        background-color: rgb(34,39,64);
+        width: 100%;
+        height: 200px;
+    }
+</style>
+<div id="blue-box">
+    <div class="topnav">
+        <img class="rupee" src="C:\Users\Vibhu Sehgal\Downloads\SVG\Rupeetool_logo.svg" alt="Rupeetool_logo" width="291.93" height="60">
+        <a class="active" style="text-decoration:none" href="">Blog</a>
+        <a style="text-decoration:none" href="">About</a>
+        <a style="text-decoration:none" href="">Loans</a>
+        <a style="text-decoration:none" href="">Real Estate</a>
+        <a style="text-decoration:none" href="">Mutual Funds</a>
+        <a style="text-decoration:none" href="">Insurance</a>
+        <a style="text-decoration:none" href="">Home</a>
+    </div>
+    <div class="powwow">
+        <div class="pic-head">
+            <img class="vector" src="C:\Users\Vibhu Sehgal\Downloads\SVG\umbrella_svg.svg" alt="Couple" width="870" height="610">
+        </div>
+        <div class="head-pic">
+            <img style="z-index: 1; margin-top: 280px; margin-left: 400px;" src="C:\Users\Vibhu Sehgal\Downloads\SVG\dots_pattern.svg" alt="" width="300" height="400">
+            <h1 class="head">All Your Financial<br>Needs Under One<br>Umbrella</h1>
+            <h2 style="font-family: Montserrat; color: white; margin-left: 10px; margin-top: 5px; font-weight: 300; z-index: 2;">Founded by Chartered Accountants to bridge the gap<br>between people and financial advice.</h2>
+            <a class="contact" href="">Contact Us</a>
+        </div>
+    </div>
+</div>
+<div class="services">
+    <h1 style="color: black; font-size: 86px; text-align: center; font-family: Montserrat;">Our Services</h1>
+</div>
+<div class="container">
+    <div class="card1">
+        <img class="card-logo" src="C:\Users\Vibhu Sehgal\Downloads\SVG\Bank_perspective_matte_1.svg" alt="">
+        <h1 style="margin-left: 23px; margin-top: 40px; font-family: Montserrat;">LOANS</h1>
+        <p style="margin-left: 22px; margin-top: 35px; font-family: Montserrat; font-size: 22px; line-height: 1.6;">
+          Low returns on your Real Estate assets?<br>Contact us for best deals in Real Estate<br>industry that suits your ambitions.
+        </p>
+        <a style="text-decoration: none; color: #61636B; font-family: Poppins; display: inline-block; font-size: 25px; margin-top: 25px; margin-left: 22px;" href="">
+          Learn More<i class="material-icons" id="estIcon">east</i>
+        </a>
+    </div>
+    <div class="card2">
+      <img class="card-logo" src="C:\Users\Vibhu Sehgal\Downloads\SVG\Heart_rate_perspective_matte_1.svg" alt="">
+      <h1 style="margin-left: 23px; margin-top: 40px; font-family: Montserrat;">Insurance</h1>
+      <p style="margin-left: 22px; margin-top: 35px; font-family: Montserrat; font-size: 22px; line-height: 1.6;">
+        Answer a few questions and we’ll give you an<br>honest advice to secure you and your family<br>financially.
+      </p>
+      <a style="text-decoration: none; color: #61636B; font-family: Poppins; display: inline-block; font-size: 25px; margin-top: 25px; margin-left: 22px;" href="">
+        Learn More<i class="material-icons" id="estIcon">east</i>
+    </a>
+    </div>
+</div>
+<div class="container2">
+    <div class="card3">
+      <img class="card-logo" src="C:\Users\Vibhu Sehgal\Downloads\SVG\Money_perspective_matte_s_2.svg" alt="Money">
+      <h1 style="margin-left: 23px; margin-top: 40px; font-family: Montserrat;">MUTUAL FUNDS</h1>
+      <p style="margin-left: 22px; margin-top: 35px; font-family: Montserrat; font-size: 22px; line-height: 1.6;">
+        Track your assets with Mutual Funds with our<br>software and on RupeeTool’s app anytime,<br>anywhere on the go
+      </p>
+      <a style="text-decoration: none; color: #61636B; font-family: Poppins; display: inline-block; font-size: 25px; margin-top: 25px; margin-left: 22px;" href="">
+        Learn More<i class="material-icons" id="estIcon">east</i>
+      </a>
+    </div>
+    <div class="card4">
+        <img style="margin-top: 5px;" src="C:\Users\Vibhu Sehgal\Downloads\SVG\perspaleta1_0028.svg" alt="House">
+        <h1 style="margin-left: 23px; margin-top: -50px; font-family: Montserrat;">REAL ESTATE</h1>
+        <p style="margin-left: 22px; margin-top: 35px; font-family: Montserrat; font-size: 22px; line-height: 1.6;">
+            Track your assets with Mutual Funds with our<br>software and on RupeeTool’s app anytime,<br>anywhere on the go
+        </p>
+        <a style="text-decoration: none; color: #61636B; font-family: Poppins; display: inline-block; font-size: 25px; margin-top: 25px; margin-left: 22px;" href="">
+            Learn More<i class="material-icons" id="estIcon">east</i>
+        </a>
+    </div>
+</div>
+<div class="associations">
+    <h1 style="color: black; font-size: 86px; text-align: center; font-family: Montserrat;">Our Associations</h1>
+</div>
+<div class="container3">
+    <div class="dlf"><img style="width: 40%; height: auto;" src="https://cdn.discordapp.com/attachments/548484359557087234/888032787188285440/image_19.png" alt="DLF Logo"></div>
+    <div class="omaxe"><img style="width: 70%; height: auto; margin-top: 10px; margin-left: 150px;" src="https://cdn.discordapp.com/attachments/548484359557087234/888032785623810118/Group_1346.png" alt="Omaxe Logo"></div>
+</div>
+<div class="purple-box">
+    <div class="slider">
+        <h1 style="color: white; margin-left: 20px; font-size: 60px; font-family: Poppins; line-height: 1;">What Our Customers<br>Say</h1>
+        <p style="margin-left: 20px; margin-top: 30px; font-family: Poppins; font-size: 22px; line-height: 1.6; color: white; font-weight: 300;">
+            Find out what our customers are saying about<br>our services
+        </p>
+        <button><i class="material-icons">west</i></button><button style="margin-left: 4px;"><i class="material-icons">east</i></button>
+    </div>
+    <div class="review">
+        <p style="margin-left: 20px; margin-top: 15px; font-family: Poppins; font-size: 19px; line-height: 2; color: white; font-weight: 300;">
+            In my personal experience, understanding finances and managing them in a<br>holistic and goal based approach is the expertise of Team RupeeTool. Way<br>to go. Kudos!
+        </p>
+        <p style="margin-left: 20px; margin-top: 25px; font-family: Poppins; font-size: 22px; line-height: 2; color: white; font-weight: 500;">
+            Keshav Tiwary
+        </p>
+        <p style="margin-left: 20px; font-family: Poppins; font-size: 16px; line-height: 1.6; color: white; font-weight: 300;">
+            Chief Operating Officer (COO),<br>Ex-MTS, National CSD Head
+            <img style="position: absolute; margin-left: 35px; margin-top: -55px;" src="https://cdn.discordapp.com/attachments/492343558871973899/890204595920453703/unknown.png" alt="">
+        </p>
+    </div>
+</div>
+<div class="getinTouch">
+    <form class="section-1">
+        <h1 style="font-family: Poppins; margin-left: 50px; margin-top: 50px; font-size: 55px; font-weight: 600;">Get in Touch</h1>
+        <p style="margin-left: 50px; margin-top: 10px; font-size: 22px; font-family: Poppins; font-weight: 400;">Drop your details and we will contact you.</p>
+        <label style="display: block; margin-left: 50px; margin-top: 50px; font-size: 20px; font-family: Poppins; font-weight: 400;" for="yName">Your Name</label>
+        <input class="fill-out" type="text" id="yNAme" placeholder=" Full Name">
+        <label style="display: block; margin-left: 50px; margin-top: 50px; font-size: 20px; font-family: Poppins; font-weight: 400;" for="email">Email ID*</label>
+        <input class="fill-out" type="text" id="email" placeholder=" Email">
+        <label style="display: block; margin-left: 50px; margin-top: 50px; font-size: 20px; font-family: Poppins; font-weight: 400;" for="phnNo">Phone Number</label>
+        <input class="fill-out" type="text" id="phnNo" placeholder=" Phone No.">
+        <label style="display: block; margin-left: 50px; margin-top: 50px; font-size: 20px; font-family: Poppins; font-weight: 400;" for="query">What can we help you with?</label>
+        <input class="fill-out" style="padding-bottom: 200px;" type="text" id="query" placeholder=" Description"><br>
+        <input style="cursor: pointer; margin-left: 50px; margin-top: 50px; padding: 12px 50px; font-size: 24px; background-color: #30489a; color: white; border: none; font-family: Poppins; border-radius: 8px;" type="submit" value="Send">
+    </form>
+    <div class="section-2">
+        <img style="margin-top: 220px; margin-left: 50px;" src="https://cdn.discordapp.com/attachments/492343558871973899/890240564317007912/unknown.png" alt="info">
+        <img style="margin-left: 105px; margin-top: 150px;" src="https://cdn.discordapp.com/attachments/492343558871973899/890241940069691412/unknown.png" alt="">
+    </div>
+</div>
+<div class="info-container">
+    <div class="info1">
+        <img style="margin-left: 175px; margin-top: 50px;" src="https://cdn.discordapp.com/attachments/492343558871973899/890244136379244664/unknown.png" alt="">
+    </div>
+    <div class="info2">
+        <p style=" margin-left: 60px; font-size: 16px; font-family: Poppins; margin-top: 50px; font-weight: 300; color: white;">
+            Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor<br>incididunt
+        </p>
+    </div>
+    <div class="info3">
+        <h1 style="font-family: Poppins; margin-left: 40px; margin-top: 50px; color: white; font-weight: 500;" >Services</h1>
+        <a class="links" href="">Real Estate</a><br>
+        <a class="links" href="">Mutual Funds</a><br>
+        <a class="links" href="">Insurance</a><br>
+        <a class="links"href="">Loans</a>
+    </div>
+    <div class="info4">
+        <h1 style="font-family: Poppins; margin-left: 40px; margin-top: 50px; color: white; font-weight: 500;" >About</h1>
+        <a class="links" href="">Our Story</a><br>
+        <a class="links" href="">Contact Us</a><br>
+        <a class="links" href="">Financial Advice</a><br>
+    </div>
+    <div class="info5">
+        <img style="margin-top: 50px; margin-left: 40px;" src="https://cdn.discordapp.com/attachments/492343558871973899/890252045817376808/unknown.png" alt="">
+    </div>
+</div>
+<div class="rights-reserved">
+    <img style="margin-left: 700px; margin-top: 40px;" src="https://cdn.discordapp.com/attachments/492343558871973899/890252604553170954/unknown.png" alt="">
+</div>
